@@ -1,238 +1,240 @@
 <html data-lt-installed="true">
-    
-<!-- body Panel -->
-<div id="mainDiv">
-    <div class="row marginBottom childDiv" id="mainDiv-1">
-    <div class="row marginBottom" id="first_application">Applicant 1</div> 
-        <table>
-            <tbody>
-                <tr>
-                    <td class="captionpnl" width="16%" valign="middle" align="left">
-                        <select class="form-control-input validate" name="app_time[]" id="app_time-1" onchange="validateTimeSlot(this);">					 
-                            <option value="" selected="selected">Hora de la cita</option>
-                        </select>
-                        <div class="caption">Appointment Time</div>
-                    </td>
-                    <td class="captionpnl" width="16%" valign "middle" align="left">
-                        <select name="VisaTypeId[]" id="VisaTypeId-1" onchange="removeError(this.id);" style="width:" '=""' cd class="form-control-input validate vtype">						
-                            <option value="">Tipo de Visa</option>
+<tr>
+    <td colspan="3" height="5">
+        <!-- body Panel -->
+        <div id="mainDiv">
+            <div class="row marginBottom childDiv" id="mainDiv-1">
+            <div class="row marginBottom" id="first_application">Applicant 1</div> 
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="captionpnl" width="16%" valign="middle" align="left">
+                                <select class="form-control-input validate" name="app_time[]" id="app_time-1" onchange="validateTimeSlot(this);">					 
+                                    <option value="" selected="selected">Hora de la cita</option>
+                                </select>
+                                <div class="caption">Appointment Time</div>
+                            </td>
+                            <td class="captionpnl" width="16%" valign "middle" align="left">
+                                <select name="VisaTypeId[]" id="VisaTypeId-1" onchange="removeError(this.id);" style="width:" '=""' cd class="form-control-input validate vtype">						
+                                    <option value="">Tipo de Visa</option>
 
 
-                            <option value="168" selected="selected">Short Term Visa</option>        
+                                    <option value="168" selected="selected">Short Term Visa</option>        
+                                    
+                                    
+                                </select>
+                                <div class="caption">Visa Type</div>
+                            </td>  
+                            <td class="captionpnl" width="16%" valign="middle" align="left">
+                                <input type="text" name="first_name[]" id="first_name-1" onfocus="removeError(this.id);" placeholder="Nombre de pila" class="form-control-input upperCase validate" 
+                                
+                                
+                                value="ANGEL STEWART" 
+                                
+
+                                onselectstart="return false" onpaste="return false;" oncopy="return false" oncut="return false" ondrag="return false" ondrop="return false" autocomplete="off">
+                                <div class="caption">First Name</div>
+                            </td>
+                            <td class="captionpnl" width="16%" valign="middle" align="left">
+                                <input type="text" placeholder="Apellido" name="last_name[]" id="last_name-1" onfocus="removeError(this.id);" class="form-control-input upperCase validate" 
+                                
+                                
+                                value="MANTILLA DUARTE" 
+                                
+                                
+                                onselectstart="return false" onpaste="return false;" oncopy="return false" oncut="return false" ondrag="return false" ondrop="return false" autocomplete="off">
+                                <div class="caption">Last Name</div>
+                            </td>
+                            <td class="captionpnl" width="16%" valign="middle" align="left">
+                                <input type="text" placeholder="Fecha de nacimiento" name="date_of_birth[]" id="date_of_birth-1" onfocus="removeError(this.id);" class="form-control-input date_of_birth validate" 
+                                
+                                
+                                value="1998-12-20" 
+                                
+                                
+                                readonly="">
+                                <div class="caption">Date of Birth</div>
+                            </td>                      
+                            <td class="captionpnl" width="16%" valign="middle" align="left">
+                                <select name="nationality[]" id="nationality-1" onchange="removeError(this.id);" class="form-control-input validate">
+                                <option value="">Nacionalidad</option>
+                                <option value="2">Afghanistan</option><option value="6">Albania</option><option value="62">Algeria</option><option value="12">American Samoa</option><option value="7">Andorra</option><option value="3">Angola</option><option value="4">Anguilla</option><option value="13">Antartica</option><option value="15">Antigua And Barbuda</option><option value="10">Argentina</option><option value="11">Armenia</option><option value="1">Aruba</option><option value="16">Australia</option><option value="17">Austria</option><option value="18">Azerbaijan</option><option value="26">Bahamas</option><option value="25">Bahrain</option><option value="23">Bangladesh</option><option value="33">Barbados</option><option value="28">Belarus</option><option value="20">Belgium</option><option value="29">Belize</option><option value="21">Benin</option><option value="30">Bermuda</option><option value="35">Bhutan</option><option value="31">Bolivia</option><option value="27">Bosnia and Herzegovina</option><option value="37">Botswana</option><option value="32">Brazil</option><option value="251">British Virgin Islands</option><option value="34">Brunei</option><option value="24">Bulgaria</option><option value="22">Burkina Faso</option><option value="19">Burundi</option><option value="115">Cambodia</option><option value="45">Cameroon</option><option value="39">Canada</option><option value="50">Cape Verde Islands</option><option value="54">Cayman Islands</option><option value="38">Central African Republic</option><option value="212">Chad</option><option value="42">Chile</option><option value="43">China</option><option value="48">Colombia</option><option value="49">Comoros</option><option value="47">Cook Islands</option><option value="51">Costa Rica</option><option value="97">Croatia</option><option value="52">Cuba</option><option value="55">Cyprus</option><option value="56">Czech Republic</option><option value="248">Democretic Republic Of Congo</option><option value="60">Denmark</option><option value="58">Djibouti</option><option value="59">Dominica</option><option value="61">Dominican Republic</option><option value="218">East Timor</option><option 
+                                
+                                
+                                value="63" selected="selected">Ecuador
                             
                             
-                        </select>
-                        <div class="caption">Visa Type</div>
-                    </td>  
-                    <td class="captionpnl" width="16%" valign="middle" align="left">
-                        <input type="text" name="first_name[]" id="first_name-1" onfocus="removeError(this.id);" placeholder="Nombre de pila" class="form-control-input upperCase validate" 
-                        
-                        
-                        value="ANGEL STEWART" 
-                        
+                                </option><option value="64">Egypt</option><option value="196">El Salvador</option><option value="86">Equatorial Guinea</option><option value="65">Eritrea</option><option value="68">Estonia</option><option value="207">Eswatini</option><option value="69">Ethiopia</option><option value="71">Fiji</option><option value="70">Finland</option><option value="73">France</option><option value="91">French Guiana</option><option value="181">French Polynesia</option><option value="14">French Southern Territories</option><option value="77">Gabon</option><option value="84">Gambia</option><option value="79">Georgia</option><option value="57">Germany</option><option value="80">Ghana</option><option value="81">Gibraltar</option><option value="87">Greece</option><option value="89">Greenland</option><option value="88">Grenada</option><option value="83">Guadeloupe</option><option value="90">Guatemala</option><option value="82">Guinea</option><option value="85">Guinea Bissau</option><option value="93">Guyana</option><option value="98">Haiti</option><option value="96">Honduras</option><option value="249">Hong Kong</option><option value="99">Hungary</option><option value="106">Iceland</option><option value="101">India</option><option value="100">Indonesia</option><option value="104">Iran</option><option value="105">Iraq</option><option value="103">Ireland</option><option value="107">Israel</option><option value="108">Italy</option><option value="44">Ivory Coast</option><option value="109">Jamaica</option><option value="111">Japan</option><option value="110">Jordan</option><option value="112">Kazakhstan</option><option value="113">Kenya</option><option value="116">Kiribati</option><option value="253">Kosovo</option><option value="119">Kuwait</option><option value="114">Kyrgyzstan</option><option value="120">Laos</option><option value="130">Latvia</option><option value="121">Lebanon</option><option value="127">Lesotho</option><option value="122">Liberia</option><option value="123">Libya</option><option value="125">Liechtenstein</option><option value="128">Lithuania</option><option value="129">Luxembourg</option><option value="250">Macau</option><option value="135">Madagascar</option><option value="151">Malawi</option><option value="152">Malaysia</option><option value="136">Maldives</option><option value="140">Mali</option><option value="141">Malta</option><option value="138">Marshall Islands</option><option value="149">Martinique</option><option value="147">Mauritania</option><option value="150">Mauritius</option><option value="153">Mayotte</option><option value="137">Mexico</option><option value="75">Micronesia (Federated States Of)</option><option value="134">Moldova</option><option value="133">Monaco</option><option value="144">Mongolia</option><option value="143">Montenegro</option><option value="148">Montserrat</option><option value="132">Morocco</option><option value="146">Mozambique</option><option value="142">Myanmar</option><option value="154">Namibia</option><option value="164">Nauru</option><option value="163">Nepal</option><option value="161">Netherlands</option><option value="8">Netherlands Antilles</option><option value="166">New Zealand</option><option value="159">Nicaragua</option><option value="156">Niger</option><option value="158">Nigeria</option><option value="177">North Korea</option><option value="139">North Macedonia</option><option value="162">Norway</option><option value="167">Oman</option><option value="168">Pakistan</option><option value="173">Palau</option><option value="180">Palestine</option><option value="169">Panama</option><option value="174">Papua New Guinea</option><option value="179">Paraguay</option><option value="171">Peru</option><option value="172">Philippines</option><option value="175">Poland</option><option value="178">Portugal</option><option value="176">Puerto Rico</option><option value="182">Qatar</option><option value="46">Republic Of Congo</option><option value="183">Reunion Islands</option><option value="184">Romania</option><option value="185">Russian Federation</option><option value="186">Rwanda</option><option value="192">Saint Helena</option><option value="117">Saint Kitts And Nevis</option><option value="124">Saint Lucia</option><option value="234">Saint Vincent And The Grenadines</option><option value="241">Samoa</option><option value="197">San Marino</option><option value="202">Sao Tome And Principe</option><option value="187">Saudi Arabia</option><option value="252">Scotland</option><option value="189">Senegal</option><option value="200">Serbia</option><option value="208">Seychelles</option><option value="195">Sierra Leone</option><option value="190">Singapore</option><option value="204">Slovakia</option><option value="205">Slovenia</option><option value="194">Solomon Islands</option><option value="198">Somalia</option><option value="245">South Africa</option><option value="191">South Georgia And The South Sandwich Islands</option><option value="118">South Korea</option><option value="201">South Sudan</option><option value="67">Spain</option><option value="126">Sri Lanka</option><option value="188">Sudan</option><option value="203">Suriname</option><option value="193">Svalbard And Jan Mayen Islands</option><option value="206">Sweden</option><option value="41">Switzerland</option><option value="209">Syria</option><option value="224">Taiwan</option><option value="215">Tajikistan</option><option value="225">Tanzania</option><option value="214">Thailand</option><option value="213">Togo</option><option value="219">Tonga</option><option value="220">Trinidad And Tobago </option><option value="221">Tunisia</option><option value="222">Turkey</option><option value="217">Turkmenistan</option><option value="211">Turks And Caicos Islands</option><option value="223">Tuvalu</option><option value="226">Uganda</option><option value="227">Ukraine</option><option value="9">United Arab Emirates</option><option value="78">United Kingdom</option><option value="231">United States Of America</option><option value="230">Uruguay</option><option value="232">Uzbekistan</option><option value="239">Vanuatu</option><option value="233">Vatican City - Holy See</option><option value="235">Venezuela</option><option value="238">Vietnam</option><option value="66">Western Sahara</option><option value="243">Yemen</option><option value="246">Zambia</option><option value="247">Zimbabwe</option>                        </select>
+                                <div class="caption">Nationality</div>
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td class="captionpnl" width="16%" valign="middle" align="left">
+                                <select name="passportType[]" id="passportType-1" onfocus="removeError(this.id);" class="form-control-input validate">
+                                <option value="" >Tipo de pasaporte </option>
+                                <option value="02">Collective passport</option><option value="13">D. Viaje Apatridas C. New York</option><option value="04">Diplomatic passport</option><option value="06">Government official on duty</option><option value="10">National laissez-passer</option><option value="14">Official passport</option>
+                                
+                                
+                                <option value="01" selected="selected">Ordinary passport</option>
+                                
+                                
+                                <option value="08">Passport of foreigners</option><option value="03">Protection passport</option><option value="12">Refugee Travel Document (Geneva Convention)</option><option value="16">Seaman’s book</option><option value="05">Service passport</option><option value="07">Special passport</option><option value="11">UN laissez-passer</option>                        </select>
+                                <div class="caption">Passport Type</div>
+                            </td>
+                            <td class="captionpnl" width="16%" valign="middle" align="left">
+                                <input type="text" placeholder="Pasaporte no" name="passport_number[]" id="passport_number-1" onfocus="removeError(this.id);" class="form-control-input upperCase validate" 
+                                
+                                
+                                value="26492869" 
+                                
+                                
+                                onselectstart="return false" onpaste="return false;" oncopy="return false" oncut="return false" ondrag="return false" ondrop="return false" autocomplete="off">
+                                <div class="caption">Passport Number</div>
+                            </td>
+                            <td class="captionpnl" width="16%" valign="middle" align="left">
+                                <input type="text" placeholder="Fecha de asunto" name="pptIssueDate[]" class="form-control-input pptIssueDate validate" id="pptIssueDate-1" onfocus="removeError(this.id);" 
+                                
+                                
+                                value="2020-12-20" 
+                                
+                                
+                                readonly="">
+                                <div class="caption">Passport Issue Date</div>
+                            </td>
+                            <td class="captionpnl" width="16%" valign="middle" align="left">
+                                <input type="text" placeholder="Fecha de caducidad" name="pptExpiryDate[]" class="form-control-input passport_validate_till validate" id="pptExpiryDate-1" onfocus="removeError(this.id);" 
+                                
+                                
+                                value="2030-12-20" 
+                                
+                                
+                                readonly="">
+                                <div class="caption">Passport Expiry Date</div>
+                            </td> 
+                            <td class="captionpnl" width="16%" valign="middle" align="left">
+                                <input type="text" placeholder="Lugar de emisión" name="pptIssuePalace[]" class="form-control-input upperCase validate" id="pptIssuePalace-1" onfocus="removeError(this.id);" 
+                                
+                                
+                                value="GUAYAQUIL"
+                                
+                                
+                                onselectstart="return false" onpaste="return false;" oncopy="return false" oncut="return false" ondrag="return false" ondrop="return false" autocomplete="off">
+                                <div class="caption">Passport Issue Place</div>
+                            </td>
+                        </tr>  
+                    </tbody>
+                </table>    
+            </div>
+            <div class="row marginBottom childDiv" id="mainDiv-2">
+                <div class="row marginBottom">
+                    <div class="lineheightExtra">Applicant 2</div>
+                </div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="captionpnl" width="16%" valign="middle" align="left">
+                                <select name="app_time[]" id="app_time-2" onchange="removeError(this.id);validateTimeSlot(this);" style="width:" '="" class="form-control-input validate"><option value="" selected="selected">Hora de la cita</option></select><div class="caption">Appointment Time</div></td>
+                            <td class="captionpnl" width="16%" valign="middle" align="left">
+                                <select name="VisaTypeId[]" id="VisaTypeId-2" onchange="removeError(this.id);" style="width:" '="" class="form-control-input validate vtype">
+                                    <option value="" selected="selected">Tipo de Visa</option>
+                                        
+                                        
+                                    <option value="168" selected="selected">Short Term Visa</option>
+                                    
+                                    
+                                </select>
+                                <div class="caption">Visa Type</div>
+                            </td>
+                            <td class="captionpnl" width="16%" valign="middle" align="left">
+                                <input type="text" name="first_name[]" id="first_name-2" onfocus="removeError(this.id);" placeholder="Nombre de pila" class="form-control-input upperCase validate" 
+                                
+                                
+                                value="GENESIS NOEMI">
+                                
+                                
+                                <div class="caption">First Name</div>
+                            </td>
+                            <td class="captionpnl" width="16%" valign="middle" align="left"><input type="text" placeholder="Apellido" name="last_name[]" id="last_name-2" onfocus="removeError(this.id);" class="form-control-input upperCase validate" 
+                                
+                                
+                                value="SISLEMA VERGARA">
+                                
+                                
+                                <div class="caption">Last Name</div>
+                            </td>
+                            <td class="captionpnl" width="16%" valign="middle" align="left"><input type="text" placeholder="Fecha de nacimiento" name="date_of_birth[]" id="date_of_birth-2" onfocus="removeError(this.id);" class="form-control-input date_of_birth validate" readonly="" 
+                                
+                                
+                                value="1998-12-12">
 
-                        onselectstart="return false" onpaste="return false;" oncopy="return false" oncut="return false" ondrag="return false" ondrop="return false" autocomplete="off">
-                        <div class="caption">First Name</div>
-                    </td>
-                    <td class="captionpnl" width="16%" valign="middle" align="left">
-                        <input type="text" placeholder="Apellido" name="last_name[]" id="last_name-1" onfocus="removeError(this.id);" class="form-control-input upperCase validate" 
-                        
-                        
-                        value="MANTILLA DUARTE" 
-                        
-                        
-                        onselectstart="return false" onpaste="return false;" oncopy="return false" oncut="return false" ondrag="return false" ondrop="return false" autocomplete="off">
-                        <div class="caption">Last Name</div>
-                    </td>
-                    <td class="captionpnl" width="16%" valign="middle" align="left">
-                        <input type="text" placeholder="Fecha de nacimiento" name="date_of_birth[]" id="date_of_birth-1" onfocus="removeError(this.id);" class="form-control-input date_of_birth validate" 
-                        
-                        
-                        value="1998-12-20" 
-                        
-                        
-                        readonly="">
-                        <div class="caption">Date of Birth</div>
-                    </td>                      
-                    <td class="captionpnl" width="16%" valign="middle" align="left">
-                        <select name="nationality[]" id="nationality-1" onchange="removeError(this.id);" class="form-control-input validate">
-                        <option value="">Nacionalidad</option>
-                        <option value="2">Afghanistan</option><option value="6">Albania</option><option value="62">Algeria</option><option value="12">American Samoa</option><option value="7">Andorra</option><option value="3">Angola</option><option value="4">Anguilla</option><option value="13">Antartica</option><option value="15">Antigua And Barbuda</option><option value="10">Argentina</option><option value="11">Armenia</option><option value="1">Aruba</option><option value="16">Australia</option><option value="17">Austria</option><option value="18">Azerbaijan</option><option value="26">Bahamas</option><option value="25">Bahrain</option><option value="23">Bangladesh</option><option value="33">Barbados</option><option value="28">Belarus</option><option value="20">Belgium</option><option value="29">Belize</option><option value="21">Benin</option><option value="30">Bermuda</option><option value="35">Bhutan</option><option value="31">Bolivia</option><option value="27">Bosnia and Herzegovina</option><option value="37">Botswana</option><option value="32">Brazil</option><option value="251">British Virgin Islands</option><option value="34">Brunei</option><option value="24">Bulgaria</option><option value="22">Burkina Faso</option><option value="19">Burundi</option><option value="115">Cambodia</option><option value="45">Cameroon</option><option value="39">Canada</option><option value="50">Cape Verde Islands</option><option value="54">Cayman Islands</option><option value="38">Central African Republic</option><option value="212">Chad</option><option value="42">Chile</option><option value="43">China</option><option value="48">Colombia</option><option value="49">Comoros</option><option value="47">Cook Islands</option><option value="51">Costa Rica</option><option value="97">Croatia</option><option value="52">Cuba</option><option value="55">Cyprus</option><option value="56">Czech Republic</option><option value="248">Democretic Republic Of Congo</option><option value="60">Denmark</option><option value="58">Djibouti</option><option value="59">Dominica</option><option value="61">Dominican Republic</option><option value="218">East Timor</option><option 
-                        
-                        
-                        value="63" selected="selected">Ecuador
-                    
-                    
-                        </option><option value="64">Egypt</option><option value="196">El Salvador</option><option value="86">Equatorial Guinea</option><option value="65">Eritrea</option><option value="68">Estonia</option><option value="207">Eswatini</option><option value="69">Ethiopia</option><option value="71">Fiji</option><option value="70">Finland</option><option value="73">France</option><option value="91">French Guiana</option><option value="181">French Polynesia</option><option value="14">French Southern Territories</option><option value="77">Gabon</option><option value="84">Gambia</option><option value="79">Georgia</option><option value="57">Germany</option><option value="80">Ghana</option><option value="81">Gibraltar</option><option value="87">Greece</option><option value="89">Greenland</option><option value="88">Grenada</option><option value="83">Guadeloupe</option><option value="90">Guatemala</option><option value="82">Guinea</option><option value="85">Guinea Bissau</option><option value="93">Guyana</option><option value="98">Haiti</option><option value="96">Honduras</option><option value="249">Hong Kong</option><option value="99">Hungary</option><option value="106">Iceland</option><option value="101">India</option><option value="100">Indonesia</option><option value="104">Iran</option><option value="105">Iraq</option><option value="103">Ireland</option><option value="107">Israel</option><option value="108">Italy</option><option value="44">Ivory Coast</option><option value="109">Jamaica</option><option value="111">Japan</option><option value="110">Jordan</option><option value="112">Kazakhstan</option><option value="113">Kenya</option><option value="116">Kiribati</option><option value="253">Kosovo</option><option value="119">Kuwait</option><option value="114">Kyrgyzstan</option><option value="120">Laos</option><option value="130">Latvia</option><option value="121">Lebanon</option><option value="127">Lesotho</option><option value="122">Liberia</option><option value="123">Libya</option><option value="125">Liechtenstein</option><option value="128">Lithuania</option><option value="129">Luxembourg</option><option value="250">Macau</option><option value="135">Madagascar</option><option value="151">Malawi</option><option value="152">Malaysia</option><option value="136">Maldives</option><option value="140">Mali</option><option value="141">Malta</option><option value="138">Marshall Islands</option><option value="149">Martinique</option><option value="147">Mauritania</option><option value="150">Mauritius</option><option value="153">Mayotte</option><option value="137">Mexico</option><option value="75">Micronesia (Federated States Of)</option><option value="134">Moldova</option><option value="133">Monaco</option><option value="144">Mongolia</option><option value="143">Montenegro</option><option value="148">Montserrat</option><option value="132">Morocco</option><option value="146">Mozambique</option><option value="142">Myanmar</option><option value="154">Namibia</option><option value="164">Nauru</option><option value="163">Nepal</option><option value="161">Netherlands</option><option value="8">Netherlands Antilles</option><option value="166">New Zealand</option><option value="159">Nicaragua</option><option value="156">Niger</option><option value="158">Nigeria</option><option value="177">North Korea</option><option value="139">North Macedonia</option><option value="162">Norway</option><option value="167">Oman</option><option value="168">Pakistan</option><option value="173">Palau</option><option value="180">Palestine</option><option value="169">Panama</option><option value="174">Papua New Guinea</option><option value="179">Paraguay</option><option value="171">Peru</option><option value="172">Philippines</option><option value="175">Poland</option><option value="178">Portugal</option><option value="176">Puerto Rico</option><option value="182">Qatar</option><option value="46">Republic Of Congo</option><option value="183">Reunion Islands</option><option value="184">Romania</option><option value="185">Russian Federation</option><option value="186">Rwanda</option><option value="192">Saint Helena</option><option value="117">Saint Kitts And Nevis</option><option value="124">Saint Lucia</option><option value="234">Saint Vincent And The Grenadines</option><option value="241">Samoa</option><option value="197">San Marino</option><option value="202">Sao Tome And Principe</option><option value="187">Saudi Arabia</option><option value="252">Scotland</option><option value="189">Senegal</option><option value="200">Serbia</option><option value="208">Seychelles</option><option value="195">Sierra Leone</option><option value="190">Singapore</option><option value="204">Slovakia</option><option value="205">Slovenia</option><option value="194">Solomon Islands</option><option value="198">Somalia</option><option value="245">South Africa</option><option value="191">South Georgia And The South Sandwich Islands</option><option value="118">South Korea</option><option value="201">South Sudan</option><option value="67">Spain</option><option value="126">Sri Lanka</option><option value="188">Sudan</option><option value="203">Suriname</option><option value="193">Svalbard And Jan Mayen Islands</option><option value="206">Sweden</option><option value="41">Switzerland</option><option value="209">Syria</option><option value="224">Taiwan</option><option value="215">Tajikistan</option><option value="225">Tanzania</option><option value="214">Thailand</option><option value="213">Togo</option><option value="219">Tonga</option><option value="220">Trinidad And Tobago </option><option value="221">Tunisia</option><option value="222">Turkey</option><option value="217">Turkmenistan</option><option value="211">Turks And Caicos Islands</option><option value="223">Tuvalu</option><option value="226">Uganda</option><option value="227">Ukraine</option><option value="9">United Arab Emirates</option><option value="78">United Kingdom</option><option value="231">United States Of America</option><option value="230">Uruguay</option><option value="232">Uzbekistan</option><option value="239">Vanuatu</option><option value="233">Vatican City - Holy See</option><option value="235">Venezuela</option><option value="238">Vietnam</option><option value="66">Western Sahara</option><option value="243">Yemen</option><option value="246">Zambia</option><option value="247">Zimbabwe</option>                        </select>
-                        <div class="caption">Nationality</div>
-                    </td>
-                </tr> 
-                <tr>
-                    <td class="captionpnl" width="16%" valign="middle" align="left">
-                        <select name="passportType[]" id="passportType-1" onfocus="removeError(this.id);" class="form-control-input validate">
-                        <option value="" >Tipo de pasaporte </option>
-                        <option value="02">Collective passport</option><option value="13">D. Viaje Apatridas C. New York</option><option value="04">Diplomatic passport</option><option value="06">Government official on duty</option><option value="10">National laissez-passer</option><option value="14">Official passport</option>
-                        
-                        
-                        <option value="01" selected="selected">Ordinary passport</option>
-                        
-                        
-                        <option value="08">Passport of foreigners</option><option value="03">Protection passport</option><option value="12">Refugee Travel Document (Geneva Convention)</option><option value="16">Seaman’s book</option><option value="05">Service passport</option><option value="07">Special passport</option><option value="11">UN laissez-passer</option>                        </select>
-                        <div class="caption">Passport Type</div>
-                    </td>
-                    <td class="captionpnl" width="16%" valign="middle" align="left">
-                        <input type="text" placeholder="Pasaporte no" name="passport_number[]" id="passport_number-1" onfocus="removeError(this.id);" class="form-control-input upperCase validate" 
-                        
-                        
-                        value="26492869" 
-                        
-                        
-                        onselectstart="return false" onpaste="return false;" oncopy="return false" oncut="return false" ondrag="return false" ondrop="return false" autocomplete="off">
-                        <div class="caption">Passport Number</div>
-                    </td>
-                    <td class="captionpnl" width="16%" valign="middle" align="left">
-                        <input type="text" placeholder="Fecha de asunto" name="pptIssueDate[]" class="form-control-input pptIssueDate validate" id="pptIssueDate-1" onfocus="removeError(this.id);" 
-                        
-                        
-                        value="2020-12-20" 
-                        
-                        
-                        readonly="">
-                        <div class="caption">Passport Issue Date</div>
-                    </td>
-                    <td class="captionpnl" width="16%" valign="middle" align="left">
-                        <input type="text" placeholder="Fecha de caducidad" name="pptExpiryDate[]" class="form-control-input passport_validate_till validate" id="pptExpiryDate-1" onfocus="removeError(this.id);" 
-                        
-                        
-                        value="2030-12-20" 
-                        
-                        
-                        readonly="">
-                        <div class="caption">Passport Expiry Date</div>
-                    </td> 
-                    <td class="captionpnl" width="16%" valign="middle" align="left">
-                        <input type="text" placeholder="Lugar de emisión" name="pptIssuePalace[]" class="form-control-input upperCase validate" id="pptIssuePalace-1" onfocus="removeError(this.id);" 
-                        
-                        
-                        value="GUAYAQUIL"
-                        
-                        
-                        onselectstart="return false" onpaste="return false;" oncopy="return false" oncut="return false" ondrag="return false" ondrop="return false" autocomplete="off">
-                        <div class="caption">Passport Issue Place</div>
-                    </td>
-                </tr>  
-            </tbody>
-        </table>    
-    </div>
-    <div class="row marginBottom childDiv" id="mainDiv-2">
-        <div class="row marginBottom">
-            <div class="lineheightExtra">Applicant 2</div>
+
+                                <div class="caption">Date of Birth</div>
+                            </td>
+                            <td class="captionpnl" width="16%" valign="middle" align="left">
+                                <select name="nationality[]" id="nationality-2" onchange="removeError(this.id);" class="form-control-input validate">
+                                    <option value="" >Nacionalidad</option><option value="2">Afghanistan</option><option value="6">Albania</option><option value="62">Algeria</option><option value="12">American Samoa</option><option value="7">Andorra</option><option value="3">Angola</option><option value="4">Anguilla</option><option value="13">Antartica</option><option value="15">Antigua And Barbuda</option><option value="10">Argentina</option><option value="11">Armenia</option><option value="1">Aruba</option><option value="16">Australia</option><option value="17">Austria</option><option value="18">Azerbaijan</option><option value="26">Bahamas</option><option value="25">Bahrain</option><option value="23">Bangladesh</option><option value="33">Barbados</option><option value="28">Belarus</option><option value="20">Belgium</option><option value="29">Belize</option><option value="21">Benin</option><option value="30">Bermuda</option><option value="35">Bhutan</option><option value="31">Bolivia</option><option value="27">Bosnia and Herzegovina</option><option value="37">Botswana</option><option value="32">Brazil</option><option value="251">British Virgin Islands</option><option value="34">Brunei</option><option value="24">Bulgaria</option><option value="22">Burkina Faso</option><option value="19">Burundi</option><option value="115">Cambodia</option><option value="45">Cameroon</option><option value="39">Canada</option><option value="50">Cape Verde Islands</option><option value="54">Cayman Islands</option><option value="38">Central African Republic</option><option value="212">Chad</option><option value="42">Chile</option><option value="43">China</option><option value="48">Colombia</option><option value="49">Comoros</option><option value="47">Cook Islands</option><option value="51">Costa Rica</option><option value="97">Croatia</option><option value="52">Cuba</option><option value="55">Cyprus</option><option value="56">Czech Republic</option><option value="248">Democretic Republic Of Congo</option><option value="60">Denmark</option><option value="58">Djibouti</option><option value="59">Dominica</option><option value="61">Dominican Republic</option><option value="218">East Timor</option>
+                                    
+                                    
+                                    <option value="63" selected="selected">Ecuador</option>
+                                    
+                                    
+                                    <option value="64">Egypt</option><option value="196">El Salvador</option><option value="86">Equatorial Guinea</option><option value="65">Eritrea</option><option value="68">Estonia</option><option value="207">Eswatini</option><option value="69">Ethiopia</option><option value="71">Fiji</option><option value="70">Finland</option><option value="73">France</option><option value="91">French Guiana</option><option value="181">French Polynesia</option><option value="14">French Southern Territories</option><option value="77">Gabon</option><option value="84">Gambia</option><option value="79">Georgia</option><option value="57">Germany</option><option value="80">Ghana</option><option value="81">Gibraltar</option><option value="87">Greece</option><option value="89">Greenland</option><option value="88">Grenada</option><option value="83">Guadeloupe</option><option value="90">Guatemala</option><option value="82">Guinea</option><option value="85">Guinea Bissau</option><option value="93">Guyana</option><option value="98">Haiti</option><option value="96">Honduras</option><option value="249">Hong Kong</option><option value="99">Hungary</option><option value="106">Iceland</option><option value="101">India</option><option value="100">Indonesia</option><option value="104">Iran</option><option value="105">Iraq</option><option value="103">Ireland</option><option value="107">Israel</option><option value="108">Italy</option><option value="44">Ivory Coast</option><option value="109">Jamaica</option><option value="111">Japan</option><option value="110">Jordan</option><option value="112">Kazakhstan</option><option value="113">Kenya</option><option value="116">Kiribati</option><option value="253">Kosovo</option><option value="119">Kuwait</option><option value="114">Kyrgyzstan</option><option value="120">Laos</option><option value="130">Latvia</option><option value="121">Lebanon</option><option value="127">Lesotho</option><option value="122">Liberia</option><option value="123">Libya</option><option value="125">Liechtenstein</option><option value="128">Lithuania</option><option value="129">Luxembourg</option><option value="250">Macau</option><option value="135">Madagascar</option><option value="151">Malawi</option><option value="152">Malaysia</option><option value="136">Maldives</option><option value="140">Mali</option><option value="141">Malta</option><option value="138">Marshall Islands</option><option value="149">Martinique</option><option value="147">Mauritania</option><option value="150">Mauritius</option><option value="153">Mayotte</option><option value="137">Mexico</option><option value="75">Micronesia (Federated States Of)</option><option value="134">Moldova</option><option value="133">Monaco</option><option value="144">Mongolia</option><option value="143">Montenegro</option><option value="148">Montserrat</option><option value="132">Morocco</option><option value="146">Mozambique</option><option value="142">Myanmar</option><option value="154">Namibia</option><option value="164">Nauru</option><option value="163">Nepal</option><option value="161">Netherlands</option><option value="8">Netherlands Antilles</option><option value="166">New Zealand</option><option value="159">Nicaragua</option><option value="156">Niger</option><option value="158">Nigeria</option><option value="177">North Korea</option><option value="139">North Macedonia</option><option value="162">Norway</option><option value="167">Oman</option><option value="168">Pakistan</option><option value="173">Palau</option><option value="180">Palestine</option><option value="169">Panama</option><option value="174">Papua New Guinea</option><option value="179">Paraguay</option><option value="171">Peru</option><option value="172">Philippines</option><option value="175">Poland</option><option value="178">Portugal</option><option value="176">Puerto Rico</option><option value="182">Qatar</option><option value="46">Republic Of Congo</option><option value="183">Reunion Islands</option><option value="184">Romania</option><option value="185">Russian Federation</option><option value="186">Rwanda</option><option value="192">Saint Helena</option><option value="117">Saint Kitts And Nevis</option><option value="124">Saint Lucia</option><option value="234">Saint Vincent And The Grenadines</option><option value="241">Samoa</option><option value="197">San Marino</option><option value="202">Sao Tome And Principe</option><option value="187">Saudi Arabia</option><option value="252">Scotland</option><option value="189">Senegal</option><option value="200">Serbia</option><option value="208">Seychelles</option><option value="195">Sierra Leone</option><option value="190">Singapore</option><option value="204">Slovakia</option><option value="205">Slovenia</option><option value="194">Solomon Islands</option><option value="198">Somalia</option><option value="245">South Africa</option><option value="191">South Georgia And The South Sandwich Islands</option><option value="118">South Korea</option><option value="201">South Sudan</option><option value="67">Spain</option><option value="126">Sri Lanka</option><option value="188">Sudan</option><option value="203">Suriname</option><option value="193">Svalbard And Jan Mayen Islands</option><option value="206">Sweden</option><option value="41">Switzerland</option><option value="209">Syria</option><option value="224">Taiwan</option><option value="215">Tajikistan</option><option value="225">Tanzania</option><option value="214">Thailand</option><option value="213">Togo</option><option value="219">Tonga</option><option value="220">Trinidad And Tobago </option><option value="221">Tunisia</option><option value="222">Turkey</option><option value="217">Turkmenistan</option><option value="211">Turks And Caicos Islands</option><option value="223">Tuvalu</option><option value="226">Uganda</option><option value="227">Ukraine</option><option value="9">United Arab Emirates</option><option value="78">United Kingdom</option><option value="231">United States Of America</option><option value="230">Uruguay</option><option value="232">Uzbekistan</option><option value="239">Vanuatu</option><option value="233">Vatican City - Holy See</option><option value="235">Venezuela</option><option value="238">Vietnam</option><option value="66">Western Sahara</option><option value="243">Yemen</option><option value="246">Zambia</option><option value="247">Zimbabwe</option>
+                                </select>
+                                <div class="caption">Nationality</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="captionpnl" width="16%" valign="middle" align="left">
+                                <select name="passportType[]" id="passportType-2" onfocus="removeError(this.id);" class="form-control-input validate">
+                                    <option value="">Tipo de pasaporte </option><option value="02">Collective passport</option><option value="13">D. Viaje Apatridas C. New York</option><option value="04">Diplomatic passport</option><option value="06">Government official on duty</option><option value="10">National laissez-passer</option><option value="14">Official passport</option>
+                                    
+                                    
+                                    <option value="01" selected="selected">Ordinary passport</option>
+                                    
+                                    
+                                    <option value="08">Passport of foreigners</option><option value="03">Protection passport</option><option value="12">Refugee Travel Document (Geneva Convention)</option><option value="16">Seaman’s book</option><option value="05">Service passport</option><option value="07">Special passport</option><option value="11">UN laissez-passer</option>
+                                </select>
+                                <div class="caption">Passport Type</div>
+                            </td>
+                            <td class="captionpnl" width="16%" valign="middle" align="left"><input type="text" placeholder="Pasaporte no" name="passport_number[]" id="passport_number-2" onfocus="removeError(this.id);" class="form-control-input upperCase validate" 
+                                
+                                
+                                value="24253180">
+                                
+                                
+                                <div class="caption">Passport Number</div>
+                            </td>
+                            <td class="captionpnl" width="16%" valign="middle" align="left"><input type="text" placeholder="Fecha de asunto" name="pptIssueDate[]" class="form-control-input pptIssueDate validate" id="pptIssueDate-2" onfocus="removeError(this.id);" readonly="" 
+                                
+                                
+                                value="2022-12-12">
+                                
+                                
+                                <div class="caption">Passport Issue Date</div>
+                            </td>
+                            <td class="captionpnl" width="16%" valign="middle" align="left">
+                                <input type="text" placeholder="Fecha de caducidad" name="pptExpiryDate[]" class="form-control-input passport_validate_till validate" id="pptExpiryDate-2" onfocus="removeError(this.id);" readonly="" 
+                                
+                                
+                                value="2032-12-12">
+                                
+                                
+                                <div class="caption">Passport Expiry Date</div>
+                            </td>
+                            <td class="captionpnl" width="16%" valign="middle" align="left">
+                                <input type="text" placeholder="Lugar de emisión" name="pptIssuePalace[]" class="form-control-input upperCase validate" id="pptIssuePalace-2" onfocus="removeError(this.id);" 
+                                
+                                
+                                value="GUAYAQUIL">
+                                
+                                
+                                <div class="caption">Passport Issue Place</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-        <table>
-            <tbody>
-                <tr>
-                    <td class="captionpnl" width="16%" valign="middle" align="left">
-                        <select name="app_time[]" id="app_time-2" onchange="removeError(this.id);validateTimeSlot(this);" style="width:" '="" class="form-control-input validate"><option value="" selected="selected">Hora de la cita</option></select><div class="caption">Appointment Time</div></td>
-                    <td class="captionpnl" width="16%" valign="middle" align="left">
-                        <select name="VisaTypeId[]" id="VisaTypeId-2" onchange="removeError(this.id);" style="width:" '="" class="form-control-input validate vtype">
-                            <option value="" selected="selected">Tipo de Visa</option>
-                                
-                                
-                            <option value="168" selected="selected">Short Term Visa</option>
-                            
-                            
-                        </select>
-                        <div class="caption">Visa Type</div>
-                    </td>
-                    <td class="captionpnl" width="16%" valign="middle" align="left">
-                        <input type="text" name="first_name[]" id="first_name-2" onfocus="removeError(this.id);" placeholder="Nombre de pila" class="form-control-input upperCase validate" 
-                        
-                        
-                        value="GENESIS NOEMI">
-                        
-                        
-                        <div class="caption">First Name</div>
-                    </td>
-                    <td class="captionpnl" width="16%" valign="middle" align="left"><input type="text" placeholder="Apellido" name="last_name[]" id="last_name-2" onfocus="removeError(this.id);" class="form-control-input upperCase validate" 
-                        
-                        
-                        value="SISLEMA VERGARA">
-                        
-                        
-                        <div class="caption">Last Name</div>
-                    </td>
-                    <td class="captionpnl" width="16%" valign="middle" align="left"><input type="text" placeholder="Fecha de nacimiento" name="date_of_birth[]" id="date_of_birth-2" onfocus="removeError(this.id);" class="form-control-input date_of_birth validate" readonly="" 
-                        
-                        
-                        value="1998-12-12">
-
-
-                        <div class="caption">Date of Birth</div>
-                    </td>
-                    <td class="captionpnl" width="16%" valign="middle" align="left">
-                        <select name="nationality[]" id="nationality-2" onchange="removeError(this.id);" class="form-control-input validate">
-                            <option value="" >Nacionalidad</option><option value="2">Afghanistan</option><option value="6">Albania</option><option value="62">Algeria</option><option value="12">American Samoa</option><option value="7">Andorra</option><option value="3">Angola</option><option value="4">Anguilla</option><option value="13">Antartica</option><option value="15">Antigua And Barbuda</option><option value="10">Argentina</option><option value="11">Armenia</option><option value="1">Aruba</option><option value="16">Australia</option><option value="17">Austria</option><option value="18">Azerbaijan</option><option value="26">Bahamas</option><option value="25">Bahrain</option><option value="23">Bangladesh</option><option value="33">Barbados</option><option value="28">Belarus</option><option value="20">Belgium</option><option value="29">Belize</option><option value="21">Benin</option><option value="30">Bermuda</option><option value="35">Bhutan</option><option value="31">Bolivia</option><option value="27">Bosnia and Herzegovina</option><option value="37">Botswana</option><option value="32">Brazil</option><option value="251">British Virgin Islands</option><option value="34">Brunei</option><option value="24">Bulgaria</option><option value="22">Burkina Faso</option><option value="19">Burundi</option><option value="115">Cambodia</option><option value="45">Cameroon</option><option value="39">Canada</option><option value="50">Cape Verde Islands</option><option value="54">Cayman Islands</option><option value="38">Central African Republic</option><option value="212">Chad</option><option value="42">Chile</option><option value="43">China</option><option value="48">Colombia</option><option value="49">Comoros</option><option value="47">Cook Islands</option><option value="51">Costa Rica</option><option value="97">Croatia</option><option value="52">Cuba</option><option value="55">Cyprus</option><option value="56">Czech Republic</option><option value="248">Democretic Republic Of Congo</option><option value="60">Denmark</option><option value="58">Djibouti</option><option value="59">Dominica</option><option value="61">Dominican Republic</option><option value="218">East Timor</option>
-                            
-                            
-                            <option value="63" selected="selected">Ecuador</option>
-                            
-                            
-                            <option value="64">Egypt</option><option value="196">El Salvador</option><option value="86">Equatorial Guinea</option><option value="65">Eritrea</option><option value="68">Estonia</option><option value="207">Eswatini</option><option value="69">Ethiopia</option><option value="71">Fiji</option><option value="70">Finland</option><option value="73">France</option><option value="91">French Guiana</option><option value="181">French Polynesia</option><option value="14">French Southern Territories</option><option value="77">Gabon</option><option value="84">Gambia</option><option value="79">Georgia</option><option value="57">Germany</option><option value="80">Ghana</option><option value="81">Gibraltar</option><option value="87">Greece</option><option value="89">Greenland</option><option value="88">Grenada</option><option value="83">Guadeloupe</option><option value="90">Guatemala</option><option value="82">Guinea</option><option value="85">Guinea Bissau</option><option value="93">Guyana</option><option value="98">Haiti</option><option value="96">Honduras</option><option value="249">Hong Kong</option><option value="99">Hungary</option><option value="106">Iceland</option><option value="101">India</option><option value="100">Indonesia</option><option value="104">Iran</option><option value="105">Iraq</option><option value="103">Ireland</option><option value="107">Israel</option><option value="108">Italy</option><option value="44">Ivory Coast</option><option value="109">Jamaica</option><option value="111">Japan</option><option value="110">Jordan</option><option value="112">Kazakhstan</option><option value="113">Kenya</option><option value="116">Kiribati</option><option value="253">Kosovo</option><option value="119">Kuwait</option><option value="114">Kyrgyzstan</option><option value="120">Laos</option><option value="130">Latvia</option><option value="121">Lebanon</option><option value="127">Lesotho</option><option value="122">Liberia</option><option value="123">Libya</option><option value="125">Liechtenstein</option><option value="128">Lithuania</option><option value="129">Luxembourg</option><option value="250">Macau</option><option value="135">Madagascar</option><option value="151">Malawi</option><option value="152">Malaysia</option><option value="136">Maldives</option><option value="140">Mali</option><option value="141">Malta</option><option value="138">Marshall Islands</option><option value="149">Martinique</option><option value="147">Mauritania</option><option value="150">Mauritius</option><option value="153">Mayotte</option><option value="137">Mexico</option><option value="75">Micronesia (Federated States Of)</option><option value="134">Moldova</option><option value="133">Monaco</option><option value="144">Mongolia</option><option value="143">Montenegro</option><option value="148">Montserrat</option><option value="132">Morocco</option><option value="146">Mozambique</option><option value="142">Myanmar</option><option value="154">Namibia</option><option value="164">Nauru</option><option value="163">Nepal</option><option value="161">Netherlands</option><option value="8">Netherlands Antilles</option><option value="166">New Zealand</option><option value="159">Nicaragua</option><option value="156">Niger</option><option value="158">Nigeria</option><option value="177">North Korea</option><option value="139">North Macedonia</option><option value="162">Norway</option><option value="167">Oman</option><option value="168">Pakistan</option><option value="173">Palau</option><option value="180">Palestine</option><option value="169">Panama</option><option value="174">Papua New Guinea</option><option value="179">Paraguay</option><option value="171">Peru</option><option value="172">Philippines</option><option value="175">Poland</option><option value="178">Portugal</option><option value="176">Puerto Rico</option><option value="182">Qatar</option><option value="46">Republic Of Congo</option><option value="183">Reunion Islands</option><option value="184">Romania</option><option value="185">Russian Federation</option><option value="186">Rwanda</option><option value="192">Saint Helena</option><option value="117">Saint Kitts And Nevis</option><option value="124">Saint Lucia</option><option value="234">Saint Vincent And The Grenadines</option><option value="241">Samoa</option><option value="197">San Marino</option><option value="202">Sao Tome And Principe</option><option value="187">Saudi Arabia</option><option value="252">Scotland</option><option value="189">Senegal</option><option value="200">Serbia</option><option value="208">Seychelles</option><option value="195">Sierra Leone</option><option value="190">Singapore</option><option value="204">Slovakia</option><option value="205">Slovenia</option><option value="194">Solomon Islands</option><option value="198">Somalia</option><option value="245">South Africa</option><option value="191">South Georgia And The South Sandwich Islands</option><option value="118">South Korea</option><option value="201">South Sudan</option><option value="67">Spain</option><option value="126">Sri Lanka</option><option value="188">Sudan</option><option value="203">Suriname</option><option value="193">Svalbard And Jan Mayen Islands</option><option value="206">Sweden</option><option value="41">Switzerland</option><option value="209">Syria</option><option value="224">Taiwan</option><option value="215">Tajikistan</option><option value="225">Tanzania</option><option value="214">Thailand</option><option value="213">Togo</option><option value="219">Tonga</option><option value="220">Trinidad And Tobago </option><option value="221">Tunisia</option><option value="222">Turkey</option><option value="217">Turkmenistan</option><option value="211">Turks And Caicos Islands</option><option value="223">Tuvalu</option><option value="226">Uganda</option><option value="227">Ukraine</option><option value="9">United Arab Emirates</option><option value="78">United Kingdom</option><option value="231">United States Of America</option><option value="230">Uruguay</option><option value="232">Uzbekistan</option><option value="239">Vanuatu</option><option value="233">Vatican City - Holy See</option><option value="235">Venezuela</option><option value="238">Vietnam</option><option value="66">Western Sahara</option><option value="243">Yemen</option><option value="246">Zambia</option><option value="247">Zimbabwe</option>
-                        </select>
-                        <div class="caption">Nationality</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="captionpnl" width="16%" valign="middle" align="left">
-                        <select name="passportType[]" id="passportType-2" onfocus="removeError(this.id);" class="form-control-input validate">
-                            <option value="">Tipo de pasaporte </option><option value="02">Collective passport</option><option value="13">D. Viaje Apatridas C. New York</option><option value="04">Diplomatic passport</option><option value="06">Government official on duty</option><option value="10">National laissez-passer</option><option value="14">Official passport</option>
-                            
-                            
-                            <option value="01" selected="selected">Ordinary passport</option>
-                            
-                            
-                            <option value="08">Passport of foreigners</option><option value="03">Protection passport</option><option value="12">Refugee Travel Document (Geneva Convention)</option><option value="16">Seaman’s book</option><option value="05">Service passport</option><option value="07">Special passport</option><option value="11">UN laissez-passer</option>
-                        </select>
-                        <div class="caption">Passport Type</div>
-                    </td>
-                    <td class="captionpnl" width="16%" valign="middle" align="left"><input type="text" placeholder="Pasaporte no" name="passport_number[]" id="passport_number-2" onfocus="removeError(this.id);" class="form-control-input upperCase validate" 
-                        
-                        
-                        value="24253180">
-                        
-                        
-                        <div class="caption">Passport Number</div>
-                    </td>
-                    <td class="captionpnl" width="16%" valign="middle" align="left"><input type="text" placeholder="Fecha de asunto" name="pptIssueDate[]" class="form-control-input pptIssueDate validate" id="pptIssueDate-2" onfocus="removeError(this.id);" readonly="" 
-                        
-                        
-                        value="2022-12-12">
-                        
-                        
-                        <div class="caption">Passport Issue Date</div>
-                    </td>
-                    <td class="captionpnl" width="16%" valign="middle" align="left">
-                        <input type="text" placeholder="Fecha de caducidad" name="pptExpiryDate[]" class="form-control-input passport_validate_till validate" id="pptExpiryDate-2" onfocus="removeError(this.id);" readonly="" 
-                        
-                        
-                        value="2032-12-12">
-                        
-                        
-                        <div class="caption">Passport Expiry Date</div>
-                    </td>
-                    <td class="captionpnl" width="16%" valign="middle" align="left">
-                        <input type="text" placeholder="Lugar de emisión" name="pptIssuePalace[]" class="form-control-input upperCase validate" id="pptIssuePalace-2" onfocus="removeError(this.id);" 
-                        
-                        
-                        value="GUAYAQUIL">
-                        
-                        
-                        <div class="caption">Passport Issue Place</div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</div>
-
+    </td>
+</tr>
 </html>
